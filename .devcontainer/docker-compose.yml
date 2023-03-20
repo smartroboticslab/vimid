@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  vimid:
+    image: vimid:latest
+    # user: "${UID}:${GID}"
+    build:
+      context: ..
+      dockerfile: ./Dockerfile
+    stdin_open: true
+    tty: true
+    network_mode: host
+    environment:
+      NVIDIA_DRIVER_CAPABILITIES: compute,utility,graphics
+      DISPLAY: $DISPLAY
+    volumes:
+      - ../:/volume
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - /home/bxu/data/datasets:/data
+    working_dir: /volume
+    command: /bin/bash
+

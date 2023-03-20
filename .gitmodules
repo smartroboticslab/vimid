@@ -1,0 +1,6 @@
+[submodule "third-party/okvis_public"]
+	path = third-party/okvis_public
+	url = git@github.com:binbin-xu/okvis_vimid.git
+[submodule "third-party/librealsense"]
+	path = third-party/librealsense
+	url = git@github.com:binbin-xu/realsense1_legacy.git

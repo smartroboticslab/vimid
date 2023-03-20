@@ -1,0 +1,14 @@
+{
+    "name": "vimid Dev Container",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "vimid",
+    "workspaceFolder": "/volume",
+    "shutdownAction": "stopCompose",
+    "postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
+    "extensions": [
+		"ms-vscode.cpptools",
+		"ms-vscode.cmake-tools",
+		"mutantdino.resourcemonitor",
+		"ms-python.python"
+	]
+}

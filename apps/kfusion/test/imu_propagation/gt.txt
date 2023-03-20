@@ -1,0 +1,2 @@
+#timestamp [ns], position.x [m], position.y [m], position.z [m], quaternion.x [], quaternion.y [], quaternion.z [], quaternion.w []
+9.470662000 1.00248e-10 9.34187e-11 -8.56055e-11 0.949457 0.0765416 0.00137806 -0.304418
